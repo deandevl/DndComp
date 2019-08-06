@@ -2,7 +2,7 @@
 
 **dnd-comp** is a web component (Vue.js >= 2.5) that provides a titled, collapsible list of items that can be dragged to another target element.  
 
-**dnd-comp** depends on the [vue.js](https://vuejs.org/ "Vue.js") framework.  The dependency can be installed via [npm install](https://docs.npmjs.com/cli/install.html "npm install") with the included `package.json` file.  Three [webpack](https://webpack.js.org/concepts/) npm scripts are included for building  development, production, or hot recompile/execute of the demo.   `build-dev` and `build-prod` scripts produce  a `dist` folder containing the `index.html`.  The size of the `main.js` bundle using `build-prod` is 9 KiB along with calling a CDN for incorporating the Vue framework.
+**dnd-comp** can be installed via with the included `package.json` file for a local installation via the [npm install](https://docs.npmjs.com/cli/install.html "npm install") command.  **dnd-comp** depends on the [vue.js](https://vuejs.org/ "Vue.js") framework.  A demo folder is provided that used [Parcel](https://parceljs.org/) together with its associated `package.json` file to bundle **dnd-comp** with its [vue.js](https://vuejs.org/ "Vue.js") dependency for a simple application.  Further details are provided below for running the demo.
 
 ## Props
 
@@ -61,7 +61,7 @@ Note that multiple **dnd-comp** children of the parent can each be bound to a un
 
 One demonstration of **dnd-comp** is provided in the folder named `demo` and can be viewed by hosting the `index.html`file. The demo  (templated in the `App.vue` file) shows **dnd-comp** with a list of cities that can be dragged to a `div` element.  The `div` element is set up in simple javascript way to accept dragged objects.  The parent is set up to listen to a cancelled drag-n-drop and console.log the item that was being dragged.  Also a button is provided on the parent which when clicked will add a new item to the list.
 
-As a suggestion, install [http-server](https://www.npmjs.com/package/http-server "http-server") globally via [npm](https://www.npmjs.com/ "npm") then enter the command `http-server`in the  **dnd-comp** `dist` directory.  From a browser enter the url: `localhost:8080/` to view the demo.
+As a suggestion, install [http-server](https://www.npmjs.com/package/http-server "http-server") locally/globally via [npm](https://www.npmjs.com/ "npm") then enter the command `http-server`in the  **dnd-comp** `dist` directory.  From a browser enter the url: `localhost:8080/` to view the demo.
 
 The demo folder contains a `package.json` file that can be used to setup dependencies for this demo and as a template for other applications using  **dnd-comp**.
 
